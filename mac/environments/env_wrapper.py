@@ -39,7 +39,7 @@ class EnvWrappperMultiTaxi(EnvWrappper):
 
         # get action space of each agent
         action_spaces = {
-            agent_id: env.action_space for agent_id in env.per_taxi_single_or_list
+            agent_id: env.action_space for agent_id in env._per_taxi_single_or_list
         }
 
         # get observation space for each agent
